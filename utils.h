@@ -79,7 +79,7 @@ void str2mac(const char *_str, byte mac[]);
 	ulong millis();
 	ulong micros();
 	void initialiseEpoch();
-	#if defined(OSPI)
+	#if defined(OSPI) || defined(OSOPI)
 	unsigned int detect_rpi_rev();
 	#endif
 

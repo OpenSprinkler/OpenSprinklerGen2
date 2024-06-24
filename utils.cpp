@@ -161,7 +161,7 @@ ulong micros (void)
 	return (ulong)(now - epochMicro) ;
 }
 
-#if defined(OSPI)
+#if defined(OSPI) || defined(OSOPI)
 unsigned int detect_rpi_rev() {
 	FILE * filp;
 	unsigned int rev;
